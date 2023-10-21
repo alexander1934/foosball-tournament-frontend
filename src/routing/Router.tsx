@@ -15,7 +15,7 @@ const Router: FC = () => {
     return (
         <Routes>
             <Route path='/' element={<PrivateRoute/>}>
-                <Route path='/' element={<Test />}/>
+              <Route path='/' element={<Test />}/>
             </Route>
             <Route path='/main' element={<Main/>}/>
             <Route path='/tournaments' element={<TournamentList />} />

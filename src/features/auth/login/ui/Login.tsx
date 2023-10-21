@@ -16,7 +16,7 @@ const Login: FC = () => {
 				<BaseInput placeholder='Пароль' type='password' />
 				<div className='flex flex-row justify-between items-center'>
 					<BaseCheckBox label='Запомнить меня' action={() => {}} />
-					<a className='text-inherit text-[12px] font-medium'>Восстановить пароль</a>
+					<a className='text-gray-500 text-[12px] font-medium'>Восстановить пароль</a>
 				</div>
 				<BaseButton title='Продолжить' action={() => {}} />
 				<p
