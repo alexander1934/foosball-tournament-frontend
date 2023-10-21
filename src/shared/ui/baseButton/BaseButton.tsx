@@ -1,5 +1,7 @@
-export const BaseButton = () => {
+const BaseButton = () => {
     return (
-        <div></div>
+        <button className='bg-[#FCC521] rounded-[10px] py-5 px-9'>Создать турнир</button>
     )
 }
+
+export {BaseButton};
