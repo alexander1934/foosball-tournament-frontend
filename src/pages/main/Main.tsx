@@ -8,8 +8,7 @@ const Main = () => {
                 <p className='text-2xl max-w-[1000px] my-8'>Присоединяйтесь миллионам пользователей, которые уже доверяют FootLeague для управления своими турнирами
                 </p>
                 <BaseButton />
-                <div className='hidden md:block bg-amber-200 w-[1000px] h-[500px]'></div>
-
+                <div className='hidden my-14 lg:block bg-amber-200 w-[1000px] h-[500px]'></div>
             </section>
         </div>
     )
