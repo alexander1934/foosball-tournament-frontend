@@ -8,17 +8,19 @@ type TFormContainer = {
 };
 
 const FormContainer: FC<PropsWithChildren<TFormContainer>> = ({ title, children }) => {
-	const navigation = useNavigate();
+	const navigate = useNavigate();
 
 	const handleComeback = () => {
-		navigation(-1);
+		navigate(-1);
 	}
 
 	return (
-		<div className='flex flex-col gap-[90px] shadow-lg'>
-			<BaseButton title='Назад' action={handleComeback}/>
-			<div className=''>
-				<h1 className='flex-[32px] font-bold'>{title}</h1>
+		<div className='flex flex-col gap-[20px] p-[40px]'>
+			<div className='justify-start'>
+				<BaseButton title='Назад' action={handleComeback} />
+			</div>
+			<div className='w-[900px] bg-[#FFF] shadow-lg m-auto px-[168px] py-[60px] rounded-[10px] gap-[30px] flex flex-col'>
+				<h1 className='text-[32px] font-bold text-center'>{title}</h1>
 				{children}
 			</div>
 		</div>

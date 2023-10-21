@@ -5,9 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4a24e0-a5e9-468f-b80d-58fd493c4a4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/features/auth/registration/ui/Registration.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/auth/registration/ui/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/TournamentList/TournamentList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/TournamentList/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routing/Router.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routing/privateRoute/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/lib/auth/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/lib/auth/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/lib/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/baseCheckbox/BaseCheckBox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/baseCheckbox/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/baseInput/BaseInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/baseInput/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/login/ui/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/login/ui/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/login/ui/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/login/ui/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routing/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routing/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routing/privateRoute/index.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/formContainer/FormContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/formContainer/FormContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +65,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "valeria",
+    "git-widget-placeholder": "Merging valeria",
     "last_opened_file_path": "/Users/alexanderkovalenko/WebstormProjects/foosball-tournament-frontend/src/assets/icons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

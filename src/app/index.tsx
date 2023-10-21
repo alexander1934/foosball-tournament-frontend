@@ -1,10 +1,7 @@
 import React, { FC } from 'react';
 
-import { Main } from '../pages/main';
-import {Login} from "../features/auth/login/ui/Login";
+import { Router } from '../routing';
 
 export const App: FC = () => {
-	return (
-		<Login />
-	);
+	return <Router />;
 };
