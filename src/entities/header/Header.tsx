@@ -9,14 +9,12 @@ const Header: FC = () => {
 					<p className='text-[20px] font-bold'>Foosball</p>
 					<p className='text=[12px] font-medium'>Tournament</p>
 				</div>
-				<div className='hidden md:flex flex-row justify-between items-center'>
-					<div className='flex flex-row gap-[40px]'>
-						<a className='flex-[16px] font-normal'>Турниры</a>
-						<a className='flex-[16px] font-normal'>События</a>
-						<a className='flex-[16px] font-normal'>Сообщество</a>
-					</div>
-					<img src={ProfileIcon}  alt='profile' />
+				<div className='hidden md:flex flex-row gap-[40px] flex-sel'>
+					<a className='flex-[16px] font-normal'>Турниры</a>
+					<a className='flex-[16px] font-normal'>События</a>
+					<a className='flex-[16px] font-normal'>Сообщество</a>
 				</div>
+				<img className='hidden md:block' src={ProfileIcon}  alt='profile' />
 			</div>
 		</div>
 	);
