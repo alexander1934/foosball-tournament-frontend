@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4a24e0-a5e9-468f-b80d-58fd493c4a4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/telegram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/vk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/footer/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routing/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routing/privateRoute/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/logo/Logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/logo/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/baseButton/BaseButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/baseButton/BaseButton.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="7f4a24e0-a5e9-468f-b80d-58fd493c4a4e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging valeria",
+    "git-widget-placeholder": "valeria",
     "last_opened_file_path": "/Users/alexanderkovalenko/WebstormProjects/foosball-tournament-frontend/src/assets/icons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
