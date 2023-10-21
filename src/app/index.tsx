@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 
-import { Main } from '../pages/main';
 import { Header } from '../entities/header';
+import { Main } from '../pages/main';
+import { Footer } from '../entities/footer';
 
 export const App: FC = () => {
 	return (
@@ -10,6 +11,7 @@ export const App: FC = () => {
 			<div className='p-[40px]'>
 				<Main />
 			</div>
+			<Footer />
 		</div>
 	);
 };
