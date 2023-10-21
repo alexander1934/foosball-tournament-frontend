@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
-import Main from "../pages/main/Main";
-import {Header} from "../entities/header";
+
+import { Main } from '../pages/main';
+import { Header } from '../entities/header';
 
 export const App: FC = () => {
 	return (
