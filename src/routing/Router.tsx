@@ -2,7 +2,8 @@ import React, { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import {Main} from "../pages/main";
 import {Login} from "../features/auth/login/ui/Login";
-import {TournamentList} from "../pages/TournamentList/TournamentList";
+import {TournamentList} from "../pages/TournamentList";
+import {TournamentPage} from "../pages/tournamentPage";
 
 // import { PrivateRoute } from './privateRoute';
 // import { Registration, Login } from '../features/auth';
@@ -21,6 +22,7 @@ const Router: FC = () => {
             <Route path='/tournaments' element={<TournamentList/>}/>
             <Route path='/auth/signin' element={<Login/>}/>
             <Route path='/auth/signup' element={<Registration/>}/>
+            <Route path='/tournament/:id' element={<TournamentPage/>}/>
         </Routes>
     );
 };

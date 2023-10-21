@@ -3,6 +3,7 @@ import React, { FC } from 'react';
 import { Logo } from '../../shared/ui';
 
 import ProfileIcon from '../../assets/icons/profile.svg';
+import {NavLink} from "react-router-dom";
 
 const Header: FC = () => {
 	return (
@@ -10,7 +11,8 @@ const Header: FC = () => {
 			<div className='flex flex-row justify-between items-center'>
 				<Logo />
 				<div className='hidden md:flex flex-row gap-[40px] flex-sel'>
-					<a className='flex-[16px] font-normal'>Турниры</a>
+					<NavLink to='/' className='flex-[16px] font-normal'>Главная</NavLink>
+					<NavLink to='/tournaments' className='flex-[16px] font-normal'>Турниры</NavLink>
 					<a className='flex-[16px] font-normal'>События</a>
 					<a className='flex-[16px] font-normal'>Сообщество</a>
 				</div>
