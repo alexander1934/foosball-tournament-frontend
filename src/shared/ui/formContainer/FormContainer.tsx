@@ -15,10 +15,10 @@ const FormContainer: FC<PropsWithChildren<TFormContainer>> = ({ title, children 
 	}
 
 	return (
-		<div className='flex flex-col gap-[90px]'>
+		<div className='flex flex-col gap-[90px] shadow-lg'>
 			<BaseButton title='Назад' action={handleComeback}/>
 			<div className=''>
-				<h1>{title}</h1>
+				<h1 className='flex-[32px] font-bold'>{title}</h1>
 				{children}
 			</div>
 		</div>
