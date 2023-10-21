@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
-import Main from "../pages/main/Main";
-import {Header} from "../entities/header";
-import {Footer} from "../entities/footer/Footer";
+import { Header } from '../entities/header';
+import { Main } from '../pages/main';
+import { Footer } from '../entities/footer';
 import {Router} from "../routing";
+
 
 export const App: FC = () => {
 	return <Router />;
