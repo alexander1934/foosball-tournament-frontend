@@ -1,46 +1,89 @@
-# Getting Started with Create React App
+# foosball-tournament-backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Технологии
+- React
+- TypeScript
+- axios
+- MobX
+- react-hook-form
+- react-tournament-brackets
 
-## Available Scripts
+[Репозиторий с бэкендом](https://github.com/profatsky/foosball-tournament-backend)
 
-In the project directory, you can run:
+## Описание
+Веб-приложение Foosball Tournament позволяет проводить и управлять турнирами по настольному футболу.
 
-### `npm start`
+### Регистрация и авторизация 
+Прежде чем создавать турнир или принимать участие в одном из имеющихся, пользователю необходимо пройти авторизацию. Неавторизованный пользователь может только просматривать список турниров, детальную информацию о них, просматривать профили пользователей и их команд.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+После авторизации пользователю открывается доступ к созданию команд, созданию турниров и участию в них. При регистрации пользователь указывает логин, пароль и свой никнейм в рамках площадки.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Пользователи и команды
 
-### `npm test`
+--
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Турниры
+Авторизированный пользователь может создавать турниры. 
+При создании указывается:
+- Название турнира
+- Описание
+- Дата начала
+- Дата конца
+- Система, по которой будут распределяться команды-участники (реализована только Олимпийская система)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Инструкция по установке
+```
+git clone <repository>
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Требования для фронтэнда
+### Обязательные
+| Требования                                                                                             | Выполнено или нет | 
+|--------------------------------------------------------------------------------------------------------|:-----------------:|
+| 1. Соответствие поставленной задаче                                                                    |         ✅         |
+| 2. Легкость восприятия сервиса                                                                         |         ✅         |
+| 3. Простота использования и удобство при регистрации и авторизации                                     |         ✅         |
+| 4. Проработанность UX                                                                                  |         ✅         |
+| 5. Достаточно поддержки последней версии Google Chrome                                                 |         ✅         |
+| 6. Поддержка экрана 1440px                                                                             |         ✅         |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Дополнительные (необязательные)
+| Требования                                                               | Выполнено или нет  | 
+|--------------------------------------------------------------------------|:------------------:|
+| 1. Поддержка экрана 360px                                                |         ✅         |
+| 2. Эффективная работа (скорость загрузки и другие оптимизации)Разработка 
+  по чистой архитектуре                                                    |         ❌         |
+| 3. Семантичная верстка, поддержка доступности                            |         ✅         |
+| 4. В README описать почему выбрали тот или иной
+  инструмент                                                               |         ✅         |
+| 5.  Указать на проблемные места в своем приложении
+  и как можно улучшить                                                     |         ✅         |
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Требования к продукту
+### Функциональные требования к продукту (обязательные)
+| Требования                                                                                                                                                   | Выполнено или нет | 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|
+| 1. Создание команды путем указания имени <br/>(или ID, если реализована авторизация)                                                                         |         ✅         |
+| 2. Возможность ввода счета сыгранного матча в турнирной сетке                                                                                                |         ✅         |
+| 3. Турнирная сетка должна генерироваться и корректно обрабатывать четное <br/>и нечетное количество команд (логика генерации на ваше усмотрение, без ошибок) |         ✅         |
+| 4. В одной команде может находиться 2 человека                                                                                                               |         ✅         |
+| 5. Возможность завершить турнир                                                                                                                              |         ✅         |
+| 6. Хранение истории сыгранных турниров                                                                                                                       |         ✅         |
+| 7. Возможность просмотра статусов всех турниров                                                                                                              |         ✅         |
+| 8. Возможность обновить данные турнирной сетки (на крайний случай обновление <br/>страницы должно обновить турнирную таблицу)                                |         ✅         |
+| 9. Хранение данных пользователей и матчей в БД                                                                                                               |         ✅         |
+| 10. Сущности БД должны содержать более одного атрибута (сущности и связи на усмотрение разработчика)                                                         |         ✅         |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Нефункциональные требования к продукту (дополнительные)
+| Требования                                                                                          | Выполнено или нет | 
+|-----------------------------------------------------------------------------------------------------|:-----------------:|
+| 1. Возможность регистрации, авторизации для доступа к турнирам                                      |         ✅         |
+| 2. Разграничение прав доступа: турнир может начать только создатель турнира                         |         ✅         |
+| 3. Данные турнирной сетки должны обновлять автоматически                                            |         ✅         |
+| 4. Турнир завершается автоматически, если все матчи сыграны, и победитель выявлен                   |         ❌         |
+| 5. Возможность просмотра статистики других пользователей (история участия в турнирах, побед и т.д.) |         ✅         |
