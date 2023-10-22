@@ -21,8 +21,8 @@ export const TournamentCard:FC<TTournamentCard> = ({tournamentName, date, time, 
     const navigate = useNavigate();
 
     return (
-        <div className='bg-white rounded-[10px] p-5 h-80 w-[400px]'>
-            <img className="w-full object-cover h-20 bg-amber-200" src={Football} alt=""/>
+        <div className='bg-white rounded-[10px] p-5 w-[400px]'>
+            <img className="w-full object-cover h-40 bg-amber-200" src={Football} alt=""/>
             <div className='flex justify-between mt-3'>
                 <h3>{tournamentName}</h3>
                 <p className='bg-red-100 px-2 text-red-700 border border-red-300 rounded-2xl'>{status}</p>

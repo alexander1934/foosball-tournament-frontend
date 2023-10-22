@@ -15,10 +15,10 @@ function Test() {
 const Router: FC = () => {
     return (
         <Routes>
-            <Route path='/' element={<PrivateRoute/>}>
-              <Route path='/' element={<Test />}/>
+            <Route path='/a' element={<PrivateRoute/>}>
+              <Route path='/a' element={<Test />}/>
             </Route>
-            <Route path='/main' element={<Main/>}/>
+            <Route path='/' element={<Main/>}/>
             <Route path='/tournaments' element={<TournamentList />} />
             <Route path='/signin' element={<Login />} />
             <Route path='/signup' element={<Registration />} />

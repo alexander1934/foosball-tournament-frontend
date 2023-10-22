@@ -5,27 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4a24e0-a5e9-468f-b80d-58fd493c4a4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/Football.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/football.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/Calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/Clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/Member.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/tournamentPage/TournamentPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/tournamentPage/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/Select/Select.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/Select/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/tournamentCard/TournamentCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/tournamentCard/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/bracket/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/registration/model/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/bracket/Bracket.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/registration/model/registrationModel.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TournamentList/TournamentList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TournamentList/TournamentList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/tournamentPage/TournamentPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/tournamentPage/TournamentPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routing/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routing/Router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routing/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routing/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/baseButton/BaseButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/baseButton/BaseButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -61,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging valeria",
+    "git-widget-placeholder": "alexander",
     "last_opened_file_path": "/Users/alexanderkovalenko/WebstormProjects/foosball-tournament-frontend/src/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -69,7 +57,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "/Users/valeria/Desktop/hack-2023-october/foosball-tournament-frontend/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/alexanderkovalenko/WebstormProjects/foosball-tournament-frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
