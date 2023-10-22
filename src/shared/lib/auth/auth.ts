@@ -1,3 +1,3 @@
-const isAuth = () => !!localStorage.getItem('isAuth');
+const isAuth = () => localStorage.setItem('isAuth', "true");
 
 export { isAuth };

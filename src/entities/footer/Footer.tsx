@@ -17,7 +17,7 @@ const Footer: FC = () => {
                 </div>
             </div>
             <div className='flex justify-between mt-10'>
-                <p>© 2023 FootTour</p>
+                <p>© 2023 Foosball Tournament</p>
                 <div className='flex gap-3'>
                     <img className='w-5' src={TelegramIcon} alt=""/>
                     <img className='w-5' src={VKIcon} alt=""/>

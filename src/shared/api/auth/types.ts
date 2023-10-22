@@ -8,7 +8,7 @@ type TRegistration = {
 	login: string;
 	nickname: string;
 	image_path: string;
-	created_at: string;
+	created_at?: string;
 };
 
 export type { TLogin, TRegistration };

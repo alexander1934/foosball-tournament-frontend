@@ -1,9 +1,15 @@
 import React, { FC } from 'react';
 import { Navigate, Outlet, RouteProps } from 'react-router-dom';
-import { isAuth } from '../../shared/lib';
+import { observer } from 'mobx-react-lite';
 
-const PrivateRoute: FC<RouteProps> = () => {
-	return isAuth() ? <Outlet /> : <Navigate to='/signin' />;
-};
+import sessionModel from '../../entities/session/model';
+
+const PrivateRoute: FC<RouteProps> = observer(() => {
+	return sessionModel.isAuthChecked && sessionModel.data ? (
+		<Outlet />
+	) : (
+		<Navigate to='/signin' />
+	);
+});
 
 export { PrivateRoute };
