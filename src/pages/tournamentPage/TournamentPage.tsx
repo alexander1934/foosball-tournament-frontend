@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, {FC, useEffect, useLayoutEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 
 import { Bracket } from '../../features/bracket';
@@ -8,6 +8,7 @@ import { BaseButton, Wrapper } from '../../shared/ui';
 import Clock from '../../assets/icons/Clock.svg';
 import Member from '../../assets/icons/Member.svg';
 import Calendar from '../../assets/icons/Calendar.svg';
+import { api } from "../../shared/api/apiAxios";
 
 type TInitState = {
     isOpen: boolean;
@@ -27,6 +28,36 @@ const TournamentPage: FC = () => {
     const [isActive, setActive] = useState<TInitState>(initState);
 
     const [isTable, setTable] = useState(false);
+    const [responce, setResponce] = useState([]);
+
+
+
+    //
+    // useEffect(() => {
+    //     const getUserById = async () => {
+    //         console.log("hhhhhh");
+    //         try {
+    //             const response = await axios.get(`http://46.17.40.48/tournaments/${id}/bracket`)
+    //             console.log("HGFTF", response.data);
+    //             setResponce(response.data);
+    //             return response.data;
+    //         } catch (err) {
+    //             console.error("123456789", err)
+    //         }
+    //     }
+    //     getUserById().then(responce => setResponce(responce));
+    // }, [id])
+
+    useEffect(() => {
+        const getUserById = async () => {
+            const response = await api.get(`/tournaments/${id}/bracket`);
+            setResponce(response.data);
+            return response.data;
+        };
+        getUserById();
+    }, [id]);
+
+    console.log('response', responce);
 
     return (
         <Wrapper>
@@ -63,8 +94,8 @@ const TournamentPage: FC = () => {
                     {/*Сетка*/}
                     <section className='overflow-x-scroll p-0'>
 
-                        {!isTable && <Bracket />}
-                        {isTable && <Table />}
+                        {!isTable && <Bracket responce={responce} />}
+                        {/*{isTable && <Table />}*/}
                     </section>
                 </section>
             </div>

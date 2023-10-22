@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4a24e0-a5e9-468f-b80d-58fd493c4a4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/createTour/lib/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/createTour/lib/schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/createTour/model/createTourModel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/createTour/model/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/createTour/ui/CreateTour.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/tour/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/tour/resources.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/tour/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/session/model/sessionModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/session/model/sessionModel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/login/lib/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/login/lib/schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/registration/lib/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/registration/lib/schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/registration/model/registrationModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/registration/model/registrationModel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/registration/ui/Registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/registration/ui/Registration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TournamentList/TournamentList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TournamentList/TournamentList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/createTour/CreateTour.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/createTour/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/createTour/ui/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routing/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routing/Router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/api/auth/resources.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/api/auth/resources.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/avatar/Avatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/avatar/Avatar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/formContainer/FormContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/formContainer/FormContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="7f4a24e0-a5e9-468f-b80d-58fd493c4a4e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "valeria",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "/Users/alexanderkovalenko/WebstormProjects/foosball-tournament-frontend/src/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

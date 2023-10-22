@@ -1,15 +1,26 @@
-import { useState } from 'react';
+import {FC, useState} from 'react';
 import {
     SingleEliminationBracket,
     Match,
 } from '@g-loot/react-tournament-brackets';
 
-export function Bracket() {
-    const [bracket, setBracket] = useState(simpleSmallBracket);
+type Tbracket = {
+    responce: any
+}
+export const Bracket:FC<Tbracket> = ({responce}) => {
+    console.log(responce)
+
+    const arr = responce.map((match: any) => ({
+        id: match.match_uuid,
+        nextMatchId: match.match_uuid,
+    }));
+
+    console.log(arr)
+
 
     return (
         <SingleEliminationBracket
-            matches={bracket}
+            matches={simpleSmallBracket}
             matchComponent={Match}
             onPartyClick={(match) => {
                 console.log(match)

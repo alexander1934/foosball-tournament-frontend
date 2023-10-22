@@ -1,7 +1,8 @@
-import React, { FC } from 'react';
-import { useNavigate } from 'react-router-dom';
-
-import { Wrapper, BaseButton } from '../../shared/ui';
+import { BaseButton } from "../../shared/ui";
+import React, { FC } from "react";
+import landing from './../../assets/landing.png';
+import { Wrapper } from "../../shared/ui";
+import {useNavigate} from "react-router-dom";
 
 const Main: FC = () => {
     const navigate = useNavigate();
@@ -22,7 +23,9 @@ const Main: FC = () => {
                     className={'py-5'}
                     action={handleCreateTour}
                 />
-                <div className='hidden my-14 lg:block bg-amber-200 w-[1000px] h-[500px]'></div>
+                <div className='hidden my-14 lg:block bg-amber-200 w-[1000px]'>
+                    <img src={landing} alt=""/>
+                </div>
             </section>
         </Wrapper>
     )
