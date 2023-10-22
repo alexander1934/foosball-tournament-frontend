@@ -9,7 +9,7 @@ import {
 } from '../../shared/ui';
 import sessionModel from '../../entities/session/model';
 
-const Profile: FC = () => {
+const Profile: FC = observer(() => {
 	const data = sessionModel.data;
 	const navigate = useNavigate();
 	const { id } = useParams();
@@ -41,6 +41,6 @@ const Profile: FC = () => {
 			</div>
 		</Wrapper>
 	);
-};
+});
 
 export { Profile };
