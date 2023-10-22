@@ -7,7 +7,9 @@ const Wrapper: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<>
 			<Header />
-			{children}
+			<div className='p-[40px]'>
+				{children}
+			</div>
 			<Footer />
 		</>
 	);

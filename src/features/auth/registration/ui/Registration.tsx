@@ -1,43 +1,61 @@
 import React, { FC } from 'react';
-import { NavLink } from 'react-router-dom';
-import {
-	BaseButton,
-	BaseCheckBox,
-	BaseInput,
-	FormContainer
-} from '../../../../shared/ui';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+
+import { schema, FormData } from '../lib';
+import { BaseButton,  BaseInput,  FormContainer } from '../../../../shared/ui';
 
 const Registration: FC = () => {
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm<FormData>({
+		resolver: yupResolver(schema),
+	});
+
+	const navigate = useNavigate();
+
+	const onSubmit = (dto: FormData) => {
+		navigate('/set-url', {state: dto});
+	};
+
 	return (
-		<FormContainer title='Регистрация'>
-			<div className='flex flex-col gap-[20px]'>
-				<div className='flex justify-between items-center gap-[20px]'>
-					<BaseInput placeholder='Логин' type='text' />
-					<BaseInput placeholder='Эл. почта' type='email' />
-				</div>
-				<BaseInput placeholder='Имя' type='text' />
-				<BaseInput placeholder='Пароль' type='password' />
-				<BaseInput placeholder='Подтверждение пароля' type='password' />
-				<div className='flex flex-col gap-[10px]'>
-					<BaseCheckBox
-						label='Я согласен с Правила пользования и Политика конфиденциальност'
-						action={() => {}}
-					/>
-					<BaseCheckBox
-						label='Я согласен на получение рассылки'
-						action={() => {}}
-					/>
-				</div>
-				<BaseButton title='Продолжить' action={() => {}} />
-				<p
-					className='text-center text-[12px] font-normal'
-				>
-					Уже есть аккаунт?
-					<NavLink to='/signin' className='font-bold'>
-						Войдите!
-					</NavLink>
-				</p>
-			</div>
+		<FormContainer title='Регистрация' onSubmit={handleSubmit(onSubmit)}>
+			<BaseInput
+				placeholder='Логин'
+				type='text'
+				{...register('login')}
+				error={errors.login?.message ?? ''}
+			/>
+			<BaseInput
+				placeholder='Имя'
+				type='text'
+				{...register('nickname')}
+				error={errors.nickname?.message ?? ''}
+			/>
+			<BaseInput
+				placeholder='Пароль'
+				type='password'
+				{...register('password')}
+				error={errors.password?.message ?? ''}
+			/>
+			<BaseInput
+				placeholder='Подтверждение пароля'
+				type='password'
+				{...register('confirmPassword')}
+				error={errors.confirmPassword?.message ?? ''}
+			/>
+			<BaseButton title='Продолжить' className={'py-3'} />
+			<p
+				className='text-center text-[12px] font-normal'
+			>
+				Уже есть аккаунт?
+				<NavLink to='/signin' className='font-bold'>
+					Войдите!
+				</NavLink>
+			</p>
 		</FormContainer>
 	);
 };
