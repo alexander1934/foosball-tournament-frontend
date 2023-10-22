@@ -24,7 +24,7 @@ class SessionModel {
 		this.load();
 	}
 
-	public setUser(dto: any) {
+	public setUser(dto: TUser) {
 		try {
 			window.localStorage.setItem(
 				SessionModel.name,

@@ -1,7 +1,7 @@
-import { BaseButton } from "../../shared/ui";
-import React, { FC } from "react";
-import { Wrapper } from "../../shared/ui";
-import {useNavigate} from "react-router-dom";
+import React, { FC } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import { Wrapper, BaseButton } from '../../shared/ui';
 
 const Main: FC = () => {
     const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Main: FC = () => {
                 <BaseButton
                     title='Создать турнир'
                     className={'py-5'}
-                    action={() => {}}
+                    action={handleCreateTour}
                 />
                 <div className='hidden my-14 lg:block bg-amber-200 w-[1000px] h-[500px]'></div>
             </section>

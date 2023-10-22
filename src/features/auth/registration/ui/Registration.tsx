@@ -5,8 +5,9 @@ import { yupResolver } from '@hookform/resolvers/yup';
 
 import { schema, FormData } from '../lib';
 import { BaseButton,  BaseInput,  FormContainer } from '../../../../shared/ui';
+import {observer} from "mobx-react-lite";
 
-const Registration: FC = () => {
+const Registration: FC = observer(() => {
 	const {
 		register,
 		handleSubmit,
@@ -58,6 +59,6 @@ const Registration: FC = () => {
 			</p>
 		</FormContainer>
 	);
-};
+});
 
 export { Registration };

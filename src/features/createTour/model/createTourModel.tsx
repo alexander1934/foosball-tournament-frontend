@@ -1,12 +1,11 @@
 import { makeAutoObservable, runInAction } from 'mobx';
 
-import { registration, TRegistration } from '../../../../shared/api/auth';
-import { TUser } from '../../../../shared/api/user';
+import { createTour, TCreateTour, TTour } from '../../../shared/api/tour';
 
-class RegistrationModel {
+class CreateToutModel {
 	private _error: string | null = null;
 	private _loading: boolean = false;
-	private _data: TUser | null = null;
+	private _data: TTour | null = null;
 
 	get error(): string | null {
 		return this._error;
@@ -16,7 +15,7 @@ class RegistrationModel {
 		return this._loading;
 	}
 
-	get data(): TUser | null {
+	get data(): TTour | null {
 		return this._data;
 	}
 
@@ -24,10 +23,11 @@ class RegistrationModel {
 		makeAutoObservable(this);
 	}
 
-	async createUser(dto: TRegistration) {
+	async setTour(dto: TCreateTour) {
 		try {
 			this._loading = true;
-			const response = await registration(dto);
+			const response = await createTour(dto);
+
 			runInAction(() => {
 				this._data = response;
 				this._loading = false;
@@ -43,4 +43,4 @@ class RegistrationModel {
 	}
 }
 
-export default new RegistrationModel();
+export default new CreateToutModel();
