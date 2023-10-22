@@ -1,8 +1,15 @@
 import { BaseButton } from "../../shared/ui";
 import React, { FC } from "react";
 import { Wrapper } from "../../shared/ui";
+import {useNavigate} from "react-router-dom";
 
 const Main: FC = () => {
+    const navigate = useNavigate();
+
+    const handleCreateTour = () => {
+        navigate('/createTour');
+    };
+
     return (
         <Wrapper>
             <section className='flex w-full md:mt-[93px] justify-center items-center text-center flex-col'>

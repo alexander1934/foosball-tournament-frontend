@@ -1,14 +1,13 @@
-import {BaseButton} from "../../shared/ui";
-import React, {FC, useState} from "react";
-import {Header} from "../../entities/header";
-import {Footer} from "../../entities/footer";
-import {Wrapper} from "../../shared/ui";
-import {useParams} from "react-router-dom";
-import Member from "../../assets/icons/Member.svg";
-import Calendar from "../../assets/icons/Calendar.svg";
-import Clock from "../../assets/icons/Clock.svg";
-import {Bracket} from "../../features/bracket";
-import {Table} from "../../features/table";
+import React, { FC, useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+import { Bracket } from '../../features/bracket';
+import { Table } from '../../features/table';
+import { BaseButton, Wrapper } from '../../shared/ui';
+
+import Clock from '../../assets/icons/Clock.svg';
+import Member from '../../assets/icons/Member.svg';
+import Calendar from '../../assets/icons/Calendar.svg';
 
 type TInitState = {
     isOpen: boolean;

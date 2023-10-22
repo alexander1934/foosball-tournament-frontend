@@ -3,8 +3,14 @@ import React, {FC} from "react";
 import {Wrapper} from "../../shared/ui";
 import {BasicSelect} from "../../shared/ui/Select";
 import {TournamentCard} from "../../widgets/tournamentCard";
+import {useNavigate} from "react-router-dom";
 
 const TournamentList: FC = () => {
+    const navigate = useNavigate();
+
+    const handleCreateTour = () => {
+        navigate('/createTour');
+    };
 
         return (
             <Wrapper>

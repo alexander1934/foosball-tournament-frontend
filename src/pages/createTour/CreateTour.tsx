@@ -1,10 +1,13 @@
 import React, { FC } from 'react';
-import { Wrapper } from '../../shared/ui';
+import {FormContainer, Wrapper} from '../../shared/ui';
 
 const CreateTour: FC = () => {
 	return (
 		<Wrapper>
-			<p>созздать тур</p>
+			<p>Новый турнир</p>
+			<FormContainer>
+
+			</FormContainer>
 		</Wrapper>
 	);
 };

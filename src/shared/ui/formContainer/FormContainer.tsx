@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { BaseButton } from '../baseButton';
 
 type TFormContainer = {
-	title: string;
+	title?: string;
 } & HTMLAttributes<HTMLFormElement>;
 
 const FormContainer: FC<PropsWithChildren<TFormContainer>> = ({ title, children, ...rest }) => {
@@ -23,7 +23,7 @@ const FormContainer: FC<PropsWithChildren<TFormContainer>> = ({ title, children,
 				className='w-[900px] bg-[#FFF] shadow-lg m-auto px-[168px] py-[60px] rounded-[10px] gap-[30px] flex flex-col'
 				{...rest}
 			>
-				<h1 className='text-[32px] font-bold text-center'>{title}</h1>
+				<h1 className='text-[32px] font-bold text-center'>{title ?? ''}</h1>
 				<div className='flex flex-col gap-[10px]'>
 					{children}
 				</div>

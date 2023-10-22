@@ -16,6 +16,7 @@ const Router: FC = () => {
     return (
         <Routes>
           <Route element={<PrivateRoute />}>
+            <Route path='/createTour' element={<CreateTour />} />
           </Route>
           <Route path='/' element={<Main/>} />
           <Route path='/profile/:id' element={<Profile />} />
@@ -23,7 +24,6 @@ const Router: FC = () => {
           <Route path='/signin' element={<Login />} />
           <Route path='/signup' element={<Registration />} />
           <Route path='/set-url' element={<SetAvatar />} />
-          <Route path='/createTour' element={<CreateTour />} />
           <Route path='/tournament/:id' element={<TournamentPage/>} />
           <Route path='*' element={<NotFound />} />
         </Routes>

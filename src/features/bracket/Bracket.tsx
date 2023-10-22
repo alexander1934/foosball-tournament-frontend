@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import {
     SingleEliminationBracket,
     Match,
 } from '@g-loot/react-tournament-brackets';
-import {useState} from "react";
 
 export function Bracket() {
     const [bracket, setBracket] = useState(simpleSmallBracket);
