@@ -9,6 +9,7 @@
 - react-tournament-brackets
 
 [Репозиторий с бэкендом](https://github.com/profatsky/foosball-tournament-backend)
+
 [Макет на Figma](https://www.figma.com/file/JksZlHW08DquJOqvE5rCFS/hack-2023-dgty?type=design&node-id=24%3A329&mode=design&t=PG5hl64fgitrQTLP-1)
 
 ## Описание
