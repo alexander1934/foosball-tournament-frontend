@@ -1,16 +1,21 @@
 import React, { FC } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 import { Logo } from '../../shared/ui';
+import sessionModel from '../session/model';
 
 import ProfileIcon from '../../assets/icons/profile.svg';
-import { NavLink } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 const Header: FC = () => {
 	const navigate = useNavigate();
 
 	const redirectToProfile = () => {
-		navigate('/signin');
+		console.log('==========>sessionModel.data', sessionModel.data);
+		if (sessionModel.data === null) {
+			navigate('/signin');
+		} else {
+			navigate(`/profile/${sessionModel.data?.user_id}`);
+		}
 	};
 
 	return (

@@ -1,9 +1,9 @@
 import { makeAutoObservable, runInAction } from 'mobx';
 
-import { registration, TRegistration } from '../../../../shared/api/auth';
+import { login, TLogin } from '../../../../shared/api/auth';
 import { TUser } from '../../../../shared/api/user';
 
-class RegistrationModel {
+class LoginModel {
 	private _error: string | null = null;
 	private _loading: boolean = false;
 	private _data: TUser | null = null;
@@ -24,11 +24,11 @@ class RegistrationModel {
 		makeAutoObservable(this);
 	}
 
-	async createUser(dto: TRegistration) {
-		console.log('==========>dto', dto);
+	async setUser(dto: TLogin) {
 		try {
 			this._loading = true;
-			const response = await registration(dto);
+			const response = await login(dto);
+
 			runInAction(() => {
 				this._data = response;
 				this._loading = false;
@@ -44,4 +44,4 @@ class RegistrationModel {
 	}
 }
 
-export default new RegistrationModel();
+export default new LoginModel();
