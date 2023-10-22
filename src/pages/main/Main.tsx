@@ -1,5 +1,6 @@
 import { BaseButton } from "../../shared/ui";
 import React, { FC } from "react";
+import landing from './../../assets/landing.png';
 import { Wrapper } from "../../shared/ui";
 
 const Main: FC = () => {
@@ -11,7 +12,9 @@ const Main: FC = () => {
                     <p className='text-xl md:text-2xl max-w-[1000px] my-8'>Присоединяйтесь миллионам пользователей, которые уже доверяют FootLeague для управления своими турнирами
                     </p>
                     <BaseButton title='Создать турнир' className={'py-5'} action={() => {}}/>
-                    <div className='hidden my-14 lg:block bg-amber-200 w-[1000px] h-[500px]'></div>
+                    <div className='hidden my-14 lg:block bg-amber-200 w-[1000px]'>
+                        <img src={landing} alt=""/>
+                    </div>
                 </section>
             </div>
         </Wrapper>

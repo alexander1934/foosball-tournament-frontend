@@ -18,7 +18,7 @@ const Login: FC = () => {
 					<BaseCheckBox label='Запомнить меня' action={() => {}} />
 					<a className='text-gray-500 text-[12px] font-medium'>Восстановить пароль</a>
 				</div>
-				<BaseButton title='Продолжить' action={() => {}} />
+				<BaseButton className={'py-4'} title='Продолжить' action={() => {}} />
 				<p
 					className='text-center text-[12px] font-normal'
 				>Еще нет аккаунта?
