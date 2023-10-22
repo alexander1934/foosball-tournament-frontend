@@ -21,7 +21,7 @@ const Main: FC = () => {
                 <BaseButton
                     title='Создать турнир'
                     className={'py-5'}
-                    action={() => {}}
+                    action={handleCreateTour}
                 />
                 <div className='hidden my-14 lg:block bg-amber-200 w-[1000px]'>
                     <img src={landing} alt=""/>

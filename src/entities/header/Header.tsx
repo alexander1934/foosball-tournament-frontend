@@ -10,7 +10,6 @@ const Header: FC = () => {
 	const navigate = useNavigate();
 
 	const redirectToProfile = () => {
-		console.log('==========>sessionModel.data', sessionModel.data);
 		if (sessionModel.data === null) {
 			navigate('/signin');
 		} else {

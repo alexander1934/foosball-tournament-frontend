@@ -19,7 +19,11 @@ const TournamentList: FC = () => {
                         <h1 className='font-bold lg:mb-0 mb-4 text-[#242424] text-2xl lg:text-5xl'>Список турниров</h1>
                         <div className='flex items-center gap-5'>
                             <BasicSelect />
-                            <BaseButton title='Создать турнир' className={'py-3 md:py-5'} action={() => {}}/>
+                            <BaseButton
+                                title='Создать турнир'
+                                className={'py-3 md:py-5'}
+                                action={handleCreateTour}
+                            />
                         </div>
                     </div>
                     <div className='flex justify-center md:justify-start flex-wrap gap-11'>

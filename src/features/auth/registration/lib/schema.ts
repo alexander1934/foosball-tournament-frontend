@@ -3,8 +3,7 @@ import * as yup from 'yup';
 const schema = yup.object({
 	login: yup
 		.string()
-		.required('Поле обязательно для заполнения')
-		.matches(/^(?! )(?!.* $)(?!(?:.* ){2}).*$/, 'Уберите лишние пробелы'),
+		.required('Поле обязательно для заполнения'),
 	nickname: yup
 		.string()
 		.required('Поле обязательно для заполнения')

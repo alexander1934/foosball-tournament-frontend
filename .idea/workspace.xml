@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4a24e0-a5e9-468f-b80d-58fd493c4a4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/bracket/Bracket.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/bracket/Bracket.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TournamentList/TournamentList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TournamentList/TournamentList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/createTour/CreateTour.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/createTour/CreateTour.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/tournamentPage/TournamentPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/tournamentPage/TournamentPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routing/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routing/Router.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="7f4a24e0-a5e9-468f-b80d-58fd493c4a4e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "valeria",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "/Users/alexanderkovalenko/WebstormProjects/foosball-tournament-frontend/src/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -64,6 +54,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/assets/icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/features/createTour/ui" />
+      <recent name="$PROJECT_DIR$/src/features" />
     </key>
   </component>
   <component name="RunManager">

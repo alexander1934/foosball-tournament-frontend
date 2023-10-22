@@ -10,7 +10,7 @@ const Avatar: FC<TAvatar> = ({ source }) => {
 	return (
 		<img
 			className='w-[200px] h-[200px] rounded-[100%] self-center'
-			src={defaultAvatarIcon}
+			src={source || defaultAvatarIcon}
 			alt='avatar'
 		/>
 	);
