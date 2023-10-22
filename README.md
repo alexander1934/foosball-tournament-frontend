@@ -1,4 +1,4 @@
-# foosball-tournament-backend
+# foosball-tournament-frontend
 
 ## Технологии
 - React
